@@ -5,7 +5,7 @@ header {
   a {
     color: $blue-color;
   }
-  border-bottom: solid $header-color;
+  border-bottom: solid $blue-color;
 }
 
 .container {
@@ -28,11 +28,16 @@ header {
 }
 
 .template__layout {
+  display: flex;
+
   .-primary {
     padding-right: 5em;
+    h1 {
+      color: $orange-color;
+    }
   };
+
   .-region-secondary {
     width: 75em;
   }
-  display: flex;
 }

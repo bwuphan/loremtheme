@@ -20,6 +20,8 @@ header {
   display: flex; }
   .template__layout .-primary {
     padding-right: 5em; }
+    .template__layout .-primary h1 {
+      color: #e5681b; }
   .template__layout .-region-secondary {
     width: 75em; }
 
