@@ -1,0 +1,35 @@
+@import "partials/variables";
+
+//header
+header {
+  a {
+    color: $header-color;
+  }
+  border-bottom: solid $header-color;
+}
+
+.container {
+  padding-left: 10em;
+}
+
+.navigation--breadcrumbs {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    li {
+      display: inline;
+      a {
+        color: $grey-color;
+      }
+    }
+  }
+}
+
+.template__layout {
+  .template__layout__region-region-primary {
+    background-color: green;
+  }
+  display: flex;
+}
