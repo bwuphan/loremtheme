@@ -52,7 +52,7 @@
 					<div class="template__layout">
 
 						<!-- template layout region primary -->
-						<main class="template__layout__region-region-primary">
+						<main class="template__layout__region-region -primary">
 
 							<h1>Skills Test</h1>
 

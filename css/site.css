@@ -18,7 +18,9 @@ header {
 
 .template__layout {
   display: flex; }
-  .template__layout .template__layout__region-region-primary {
-    background-color: green; }
+  .template__layout .-primary {
+    padding-right: 5em; }
+  .template__layout .-region-secondary {
+    width: 75em; }
 
 /*# sourceMappingURL=site.css.map */

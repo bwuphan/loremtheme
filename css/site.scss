@@ -3,7 +3,7 @@
 //header
 header {
   a {
-    color: $header-color;
+    color: $blue-color;
   }
   border-bottom: solid $header-color;
 }
@@ -28,8 +28,11 @@ header {
 }
 
 .template__layout {
-  .template__layout__region-region-primary {
-    background-color: green;
+  .-primary {
+    padding-right: 5em;
+  };
+  .-region-secondary {
+    width: 75em;
   }
   display: flex;
 }
