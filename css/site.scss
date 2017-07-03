@@ -3,7 +3,7 @@
 //header
 header {
   a {
-    color: $blue-color;
+    color: green;
   }
   border-bottom: solid $blue-color;
 }
@@ -39,5 +39,6 @@ header {
 
   .-region-secondary {
     width: 75em;
+    background-color: $grey-color;
   }
 }

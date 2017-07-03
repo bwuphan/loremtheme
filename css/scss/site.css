@@ -1,0 +1,83 @@
+header {
+  border-bottom: solid #2b3487; }
+  header a {
+    color: #2b3487; }
+
+.container {
+  padding-left: 7em; }
+
+.navigation--breadcrumbs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline; }
+  .navigation--breadcrumbs ul li {
+    display: inline; }
+    .navigation--breadcrumbs ul li a {
+      color: #bdbfc1; }
+
+.template__layout {
+  display: flex; }
+  .template__layout .-primary {
+    padding-right: 5em; }
+    .template__layout .-primary h1 {
+      color: #e5681b; }
+    .template__layout .-primary .intro {
+      color: #bdbfc1; }
+    .template__layout .-primary li a {
+      color: #299954; }
+    .template__layout .-primary h4 {
+      color: #e5681b; }
+    .template__layout .-primary blockquote {
+      padding: 1.5em 1em 1.5em 1em;
+      background-color: #f2ddd2; }
+  .template__layout .-region-secondary {
+    width: 75em;
+    padding-right: 7.5em; }
+    .template__layout .-region-secondary .event-list__item__meta__date {
+      font-weight: bold; }
+    .template__layout .-region-secondary .event-list__item__title a {
+      color: #299954; }
+    .template__layout .-region-secondary .card {
+      background-color: #eff0f2;
+      border-top: solid #e5681b;
+      padding-left: 1em;
+      padding-right: 1em; }
+      .template__layout .-region-secondary .card .contacts-list .contacts-list__item {
+        border-bottom: solid thin #bdbfc1; }
+        .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--thumbnail {
+          border-radius: 50px; }
+        .template__layout .-region-secondary .card .contacts-list .contacts-list__item img {
+          height: 50%;
+          width: 50%;
+          border-radius: 50%; }
+
+footer {
+  background-color: #2b3487;
+  color: white; }
+  footer .container {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    display: flex; }
+    footer .container nav {
+      padding-top: 1.5em;
+      padding-right: 7.5em;
+      justify-content: center; }
+      footer .container nav ul {
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        display: flex;
+        background-color: #4b56c1;
+        list-style-type: none;
+        display: inline; }
+        footer .container nav ul li {
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          display: inline; }
+          footer .container nav ul li a {
+            color: white; }
+    footer .container .footer-info {
+      flex-direction: column; }
+
+/*# sourceMappingURL=site.css.map */

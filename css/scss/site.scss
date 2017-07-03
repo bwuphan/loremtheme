@@ -1,0 +1,122 @@
+@import "partials/variables";
+
+//header
+header {
+  a {
+    color: $blue-color;
+  }
+  border-bottom: solid $blue-color;
+}
+.container {
+  padding-left: $container-padding-left;
+}
+
+.navigation--breadcrumbs {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    li {
+      display: inline;
+      a {
+        color: $grey-color;
+      }
+    }
+  }
+}
+
+.template__layout {
+  display: flex;
+
+  .-primary {
+    padding-right: 5em;
+    h1 {
+      color: $orange-color;
+    }
+    .intro {
+      color: $grey-color;
+    }
+    li {
+      a {
+        color: $green-color;
+      }
+    }
+    h4 {
+      color: $orange-color;
+    }
+    blockquote {
+      padding: 1.5em 1em 1.5em 1em;
+      background-color: $salmon-color;
+    };
+  };
+
+  .-region-secondary {
+    width: 75em;
+    padding-right: 7.5em;
+    .event-list__item__meta__date {
+      font-weight: bold;
+    }
+    .event-list__item__title {
+      a {
+        color: $green-color;
+      }
+    }
+    .card {
+      background-color: $grey-light-color;
+      border-top: solid $orange-color;
+      padding-left: 1em;
+      padding-right: 1em;
+      .contacts-list {
+        .contacts-list__item {
+          border-bottom: solid thin $grey-color;
+          .contacts-list__item__detail--thumbnail {
+            border-radius: 50px;
+          }
+          img {
+            height: 50%;
+            width: 50%;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $blue-color;
+  color: white;
+  .container {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    display: flex;
+    nav {
+      padding-top: 1.5em;
+      padding-right: 7.5em;
+      justify-content: center;
+      ul {
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        display: flex;
+        background-color: $blue-light-color;
+        list-style-type: none;
+        display: inline;
+        li {
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          display: inline;
+          a {
+            // font-family: 'FontAwesome';
+            color: white;
+          }
+        }
+      }
+
+    }
+    .footer-info {
+      flex-direction: column;
+    }
+  }
+}
