@@ -1,4 +1,9 @@
 @import "partials/variables";
+@import "partials/mixins";
+
+.container {
+  padding-left: $container-padding-left;
+}
 
 //header
 header {
@@ -6,9 +11,6 @@ header {
     color: $blue-color;
   }
   border-bottom: solid $blue-color;
-}
-.container {
-  padding-left: $container-padding-left;
 }
 
 .navigation--breadcrumbs {
@@ -38,9 +40,7 @@ header {
       color: $grey-color;
     }
     li {
-      a {
-        color: $green-color;
-      }
+      @include green-anchor();
     }
     h4 {
       color: $orange-color;
@@ -52,14 +52,18 @@ header {
   };
 
   .-region-secondary {
+    padding-top: 2em;
     width: 75em;
     padding-right: 7.5em;
     .event-list__item__meta__date {
       font-weight: bold;
     }
-    .event-list__item__title {
-      a {
-        color: $green-color;
+    .event-list__item {
+      .event-list__item__title {
+        @include green-anchor();
+      }
+      p {
+        margin-top: 0;
       }
     }
     .card {
@@ -73,9 +77,12 @@ header {
           .contacts-list__item__detail--thumbnail {
             border-radius: 50px;
           }
+          .contacts-list__item__detail--name {
+            font-weight: bold;
+          }
           img {
-            height: 50%;
-            width: 50%;
+            height: $image-size;
+            width: $image-size;
             border-radius: 50%;
           }
         }
@@ -120,3 +127,47 @@ footer {
     }
   }
 }
+
+// Screens below 800px and above 600px
+@include medium-screens {
+  .container {
+    padding-left: 2em;
+  }
+  .template-layout {
+    .-region-secondary {
+      padding-right: 0;
+    }
+  }
+
+  blockquote {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+//Screens below 600px
+@include small-screens {
+  .container {
+    padding-left: $horizontal-padding-small-screens;
+    padding-right: $horizontal-padding-small-screens;
+  }
+  .template__layout {
+    .-primary {
+      padding-right: 1em;
+    }
+
+  }
+  .template__layout {
+    flex-direction: column;
+    .-region-secondary {
+      padding-left: 6em;
+      padding-bottom: 2em;
+      justify-content: space-around;
+      display: flex-end;
+      flex-direction: column;
+      width: fit-content;
+    }
+  }
+}
+
+

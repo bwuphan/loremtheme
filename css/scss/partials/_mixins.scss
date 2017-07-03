@@ -1,0 +1,18 @@
+@mixin small-screens() {
+  @media only screen and (max-width: 600px) {
+    @content;
+  };
+};
+
+@mixin medium-screens() {
+  @media only screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin green-anchor() {
+  a {
+    color: $green-color;
+    text-decoration: none;
+  }
+}
