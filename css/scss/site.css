@@ -3,39 +3,35 @@ a {
   text-decoration: none; }
 
 .container {
-  padding-left: 7em;
+  padding-left: 9.1em;
   font-family: 'glacial_indifference--regular'; }
 
 header {
-  background-size: 100%;
   border-bottom: solid #2b3487; }
   header h1 {
-    height: 70px;
-    width: 300px;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    height: 3.5rem;
+    width: 15rem;
     background-image: url(./logo@2x.png);
     background-size: 100%; }
   header a {
-    height: 10%;
-    padding-bottom: 50px;
-    padding-right: 10px;
-    padding-right: 400px;
     display: none; }
 
 .navigation--breadcrumbs {
-  padding-top: 3%; }
+  padding-top: 0.75rem; }
   .navigation--breadcrumbs ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline; }
+    padding: 0; }
     .navigation--breadcrumbs ul li {
+      font-family: 'glacial_indifference--regular';
       color: #bdbfc1;
       display: inline; }
       .navigation--breadcrumbs ul li:after {
         content: '\00a0/\00a0'; }
       .navigation--breadcrumbs ul li a {
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 0.5rem;
         color: #bdbfc1; }
       .navigation--breadcrumbs ul li:last-child:after {
         content: none; }
@@ -47,10 +43,16 @@ header {
     .template__layout .-primary h2, .template__layout .-primary h3, .template__layout .-primary h4, .template__layout .-primary h5 {
       font-family: 'glacial_indifference--bold'; }
     .template__layout .-primary h1 {
+      margin-top: .53em;
       font-family: glacial_indifference--regular;
-      color: #e5681b;
+      font-weight: normal;
+      color: #f45c42;
       border-bottom: solid thin #eff0f2;
-      padding-bottom: .8em; }
+      padding-bottom: .55em;
+      font-size: 2.6em; }
+    .template__layout .-primary h5 {
+      text-transform: uppercase;
+      letter-spacing: 1.5px; }
     .template__layout .-primary h2 {
       color: #2b3487; }
     .template__layout .-primary .intro {
@@ -64,12 +66,13 @@ header {
         color: #299954;
         text-decoration: none; }
     .template__layout .-primary h4 {
-      color: #e5681b; }
+      color: #f45c42; }
     .template__layout .-primary blockquote {
       padding: 1.5em 1em 1.5em 1em;
       background-color: #f2ddd2; }
       .template__layout .-primary blockquote p {
-        line-height: 2em; }
+        line-height: 2em;
+        font-size: 18px; }
   .template__layout .-region-secondary {
     padding-top: 2em;
     width: 300px;
@@ -95,7 +98,7 @@ header {
       line-height: 1.5em; }
     .template__layout .-region-secondary .card {
       background-color: #eff0f2;
-      border-top: solid #e5681b;
+      border-top: solid #f45c42;
       padding-left: 1em;
       padding-right: 1em;
       width: 200px; }
@@ -161,7 +164,7 @@ footer {
           footer .container nav ul li:last-child {
             border-right: none; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 760px) {
   .container {
     padding-left: 1em;
     padding-right: 1em; }
@@ -173,6 +176,7 @@ footer {
     flex-direction: column; }
     .template__layout .-region-secondary {
       width: 100%;
+      padding-right: 0;
       padding-bottom: 2em;
       display: flex;
       justify-content: space-around; }
@@ -181,17 +185,23 @@ footer {
 
   footer .container {
     display: flex;
-    flex-direction: column; }
-    footer .container ul {
+    flex-direction: column;
+    justify-content: center; }
+    footer .container nav {
       justify-content: center;
-      float: none;
-      text-align: center; }
+      padding: 0;
+      display: flex; }
     footer .container p {
+      text-align: center;
       justify-content: center; } }
 @media only screen and (max-width: 460px) {
   .-region-secondary {
+    float: right;
     width: 400px;
     padding: 0; }
+    .-region-secondary .card {
+      background-color: blue;
+      padding-left: 0; }
 
   .contacts-list {
     display: flex;

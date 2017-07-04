@@ -13,40 +13,35 @@ a {
 
 //header
 header {
-  background-size: 100% ;
   h1 {
-    height: 70px;
-    width: 300px;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    height: 3.5rem;
+    width: 15rem;
     background-image: url(./logo@2x.png);
-    background-size: 100% ;
+    background-size: 100%;
   }
   a {
-    height: 10%;
-    padding-bottom: 50px;
-    padding-right: 10px;
-    padding-right: 400px;
     display: none;
-    // background-image: ('./logo@2x.png')
   }
   border-bottom: solid $blue-color;
 }
 
 .navigation--breadcrumbs {
-  padding-top: 3%;
+  padding-top: 0.75rem;
   ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: inline;
     li {
       &:after {
         content: '\00a0/\00a0';
       }
+      font-family: 'glacial_indifference--regular';
       color: $grey-color;
       display: inline;
       a {
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 0.5rem;
         color: $grey-color;
       }
       &:last-child:after{
@@ -65,10 +60,17 @@ header {
       font-family: 'glacial_indifference--bold';
     }
     h1 {
+      margin-top: .53em;
       font-family: glacial_indifference--regular;
+      font-weight: normal;
       color: $orange-color;
       border-bottom: solid thin $grey-light-color;
-      padding-bottom: .8em;
+      padding-bottom: .55em;
+      font-size: 2.6em;
+    }
+    h5 {
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
     }
     h2 {
       color: $blue-color;
@@ -92,7 +94,7 @@ header {
       background-color: $salmon-color;
       p {
         line-height: 2em;
-
+        font-size: 18px;
       }
     };
   };
@@ -257,6 +259,7 @@ footer {
     flex-direction: column;
     .-region-secondary {
       width: 100%;
+      padding-right: 0;
       padding-bottom: 2em;
       display:flex;
       justify-content: space-around;
@@ -270,14 +273,17 @@ footer {
     .container {
       display: flex;
       flex-direction: column;
-      // justify-content: center;
-      ul {
+      justify-content: center;
+      nav {
         justify-content: center;
-        float: none;
-        text-align: center;
+        padding: 0;
+        display: flex;
+        // ul {
+        //   justify-content: center;
+        // }
       }
       p {
-        // text-align: center;
+        text-align: center;
         justify-content: center;
       }
 
@@ -287,6 +293,11 @@ footer {
 
 @include small-screens {
   .-region-secondary {
+    .card {
+      background-color: blue;
+      padding-left: 0;
+    }
+    float: right;
     width: 400px;
     padding: 0;
   }
