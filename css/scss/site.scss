@@ -131,9 +131,8 @@ header {
       width: 200px;
       .contacts-list {
         .contacts-list__item {
-          padding-top: 1em;
           border-bottom: solid thin $grey-color;
-          padding-bottom: 1em;
+          padding-bottom: 1.2em;
           .contacts-list__item__detail--thumbnail {
             float:left;
             padding-right: 1em;
@@ -168,9 +167,12 @@ header {
             width: $image-size;
             border-radius: 50%;
           }
-        &:last-child{
-          border-bottom: none;
-        }
+          &:last-child{
+            border-bottom: none;
+          }
+          &:not(:first-child) {
+            padding-top: 1em;
+          }
         }
       }
     }
