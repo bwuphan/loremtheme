@@ -81,6 +81,7 @@ header {
       line-height: 1.5em;
     }
     li {
+      line-height: 2em;
       @include green-anchor();
     }
     h4 {
@@ -104,11 +105,15 @@ header {
     width: 300px;
     padding-right: 7.5em;
     .event-list__item {
+      .event-list__item__meta {
+        padding-bottom: 0.2bem;
+      }
       &:before {
         position: relative;
         content: url(../../images/icons/calendar--orange.svg);
         // left: -1em;
         float: left;
+        padding-top: 0.25em;
         padding-right: .5em;
         // clear: right;
       }
@@ -121,6 +126,7 @@ header {
       p {
         margin-left: 1.4em;
         margin-top: 0;
+        line-height: 1.5em;
       }
     }
     .card {
@@ -133,9 +139,12 @@ header {
         .contacts-list__item {
           border-bottom: solid thin $grey-color;
           padding-bottom: 1.2em;
+          .contacts-list__item__detail {
+            padding-bottom: 0.3em;
+          }
           .contacts-list__item__detail--thumbnail {
             float:left;
-            padding-right: 1em;
+            padding-right: 0.5em;
             padding-bottom: 0.75em;
             width: 4em;
             height: 4em;
@@ -251,7 +260,10 @@ footer {
       justify-content: space-around;
       display: flex-end;
       flex-direction: column;
-      width: 20em;
+      width: 15em;
+      .card {
+        width: 200px;
+      }
     }
   }
   footer {
