@@ -242,7 +242,7 @@ footer {
 // }
 
 //Screens below 600px
-@include small-screens {
+@include medium-screens {
   .container {
     padding-left: $horizontal-padding-small-screens;
     padding-right: $horizontal-padding-small-screens;
@@ -256,13 +256,13 @@ footer {
   .template__layout {
     flex-direction: column;
     .-region-secondary {
+      width: 100%;
       padding-bottom: 2em;
+      display:flex;
       justify-content: space-around;
-      display: flex-end;
-      flex-direction: column;
-      width: 15em;
+      // flex-direction: ;
       .card {
-        width: 200px;
+        width: 180px;
       }
     }
   }
@@ -281,6 +281,22 @@ footer {
         justify-content: center;
       }
 
+    }
+  }
+}
+
+@include small-screens {
+  .-region-secondary {
+    width: 400px;
+    padding: 0;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+    .contacts-list__item {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

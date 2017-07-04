@@ -172,13 +172,12 @@ footer {
   .template__layout {
     flex-direction: column; }
     .template__layout .-region-secondary {
+      width: 100%;
       padding-bottom: 2em;
-      justify-content: space-around;
-      display: flex-end;
-      flex-direction: column;
-      width: 15em; }
+      display: flex;
+      justify-content: space-around; }
       .template__layout .-region-secondary .card {
-        width: 200px; }
+        width: 180px; }
 
   footer .container {
     display: flex;
@@ -189,5 +188,17 @@ footer {
       text-align: center; }
     footer .container p {
       justify-content: center; } }
+@media only screen and (max-width: 460px) {
+  .-region-secondary {
+    width: 400px;
+    padding: 0; }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contacts-list .contacts-list__item {
+      display: flex;
+      flex-direction: column; } }
 
 /*# sourceMappingURL=site.css.map */
