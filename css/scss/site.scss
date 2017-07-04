@@ -67,6 +67,8 @@ header {
       font-family: 'glacial_indifference--bold';
       font-weight: normal;
       color: $orange-color;
+      border-bottom: solid thin $grey-light-color;
+      padding-bottom: .8em;
     }
     h2 {
       color: $blue-color;
@@ -95,12 +97,20 @@ header {
   };
 
   .-region-secondary {
+    h3 {
+      font-weight: normal;
+    }
     padding-top: 2em;
     width: 75em;
     padding-right: 7.5em;
     .event-list__item {
       &:before {
+        position: relative;
         content: url(../../images/icons/calendar--orange.svg);
+        // left: -1em;
+        float: left;
+        padding: 0;
+        // clear: right;
       }
       .event-list__item__meta__date {
         font-family: 'glacial_indifference--bold';
@@ -122,6 +132,7 @@ header {
           border-bottom: solid thin $grey-color;
           .contacts-list__item__detail--name {
             font-weight: bold;
+            // transform: translate(15em, );
           }
           .contacts-list__item__detail--handle {
             color: $twitter-blue;
@@ -177,8 +188,9 @@ footer {
           padding-left: 0.5em;
           padding-right: 0.5em;
           display: inline;
+          padding-top: 0.1em;
+          padding-bottom: 0.1em;
           a {
-            // font-family: 'FontAwesome';
             color: white;
           }
           &:last-child {

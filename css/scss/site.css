@@ -48,7 +48,9 @@ header {
     .template__layout .-primary h1 {
       font-family: 'glacial_indifference--bold';
       font-weight: normal;
-      color: #e5681b; }
+      color: #e5681b;
+      border-bottom: solid thin #eff0f2;
+      padding-bottom: .8em; }
     .template__layout .-primary h2 {
       color: #2b3487; }
     .template__layout .-primary .intro {
@@ -70,8 +72,13 @@ header {
     padding-top: 2em;
     width: 75em;
     padding-right: 7.5em; }
+    .template__layout .-region-secondary h3 {
+      font-weight: normal; }
     .template__layout .-region-secondary .event-list__item:before {
-      content: url(../../images/icons/calendar--orange.svg); }
+      position: relative;
+      content: url(../../images/icons/calendar--orange.svg);
+      float: left;
+      padding: 0; }
     .template__layout .-region-secondary .event-list__item .event-list__item__meta__date {
       font-family: 'glacial_indifference--bold'; }
     .template__layout .-region-secondary .event-list__item .event-list__item__title a {
@@ -120,14 +127,16 @@ footer {
       footer .container nav ul {
         float: right;
         padding: 0.5em 0.5em 0.5em 0.5em;
-        background-color: #4b56c1;
+        background-color: #4c5599;
         list-style-type: none;
         display: inline; }
         footer .container nav ul li {
           border-right: solid thin white;
           padding-left: 0.5em;
           padding-right: 0.5em;
-          display: inline; }
+          display: inline;
+          padding-top: 0.1em;
+          padding-bottom: 0.1em; }
           footer .container nav ul li a {
             color: white; }
           footer .container nav ul li:last-child {
