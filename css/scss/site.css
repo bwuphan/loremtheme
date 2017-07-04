@@ -92,7 +92,15 @@ header {
       padding-left: 1em;
       padding-right: 1em; }
       .template__layout .-region-secondary .card .contacts-list .contacts-list__item {
-        border-bottom: solid thin #bdbfc1; }
+        padding-top: 1em;
+        border-bottom: solid thin #bdbfc1;
+        padding-bottom: 1em; }
+        .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--thumbnail {
+          float: left;
+          padding-right: 1em;
+          padding-bottom: 0.75em;
+          width: 4em;
+          height: 4em; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--name {
           font-weight: bold; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--handle {
@@ -108,11 +116,11 @@ header {
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--email a {
           color: black; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item img {
-          height: 50%;
-          width: 50%;
+          height: 100%;
+          width: 100%;
           border-radius: 50%; }
-      .template__layout .-region-secondary .card .contacts-list:last-child {
-        border-bottom: none; }
+      .template__layout .-region-secondary .card .contacts-list:first-child {
+        border-bottom: solid #e5681b; }
 
 footer {
   background-color: #2b3487;

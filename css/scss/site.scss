@@ -129,7 +129,16 @@ header {
       padding-right: 1em;
       .contacts-list {
         .contacts-list__item {
+          padding-top: 1em;
           border-bottom: solid thin $grey-color;
+          padding-bottom: 1em;
+          .contacts-list__item__detail--thumbnail {
+            float:left;
+            padding-right: 1em;
+            padding-bottom: 0.75em;
+            width: 4em;
+            height: 4em;
+          }
           .contacts-list__item__detail--name {
             font-weight: bold;
             // transform: translate(15em, );
@@ -159,8 +168,8 @@ header {
             border-radius: 50%;
           }
         }
-        &:last-child {
-          border-bottom: none;
+        &:first-child {
+          border-bottom: solid $orange-color;
         }
       }
     }
