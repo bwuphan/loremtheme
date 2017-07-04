@@ -1,0 +1,77 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "../webfonts.css";
+
+
+@include medium-screens {
+  .container {
+    padding-left: $horizontal-padding-small-screens;
+    padding-right: $horizontal-padding-small-screens;
+  }
+  .template__layout {
+    .-primary {
+      padding-right: 1em;
+    }
+
+  }
+  .template__layout {
+    flex-direction: column;
+    .-region-secondary {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 2em;
+      display:flex;
+      justify-content: space-around;
+      // flex-direction: ;
+      .card {
+        width: 180px;
+      }
+    }
+  }
+  footer {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      nav {
+        justify-content: center;
+        padding: 0;
+        display: flex;
+        // ul {
+        //   justify-content: center;
+        // }
+      }
+      p {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include small-screens {
+  .-region-secondary {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
+    // text-align: center;
+    width: 400px;
+    padding: 0;
+    .card {
+      justify-content: center;
+      padding-left: 100px;
+    }
+    // float: right;
+  }
+  // .contacts-list {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   .contacts-list__item {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  // }
+
+}

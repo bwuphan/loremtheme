@@ -61,13 +61,6 @@ header {
     h2,h3,h4,h5 {
       font-family: 'glacial_indifference--bold';
     }
-    h2 {
-      font-size: 1.6rem;
-      letter-spacing: 0.05rem;
-    }
-    h3 {
-      font-size: 1.3rem;
-    }
     h1 {
       margin-top: .4rem;
       font-family: glacial_indifference--regular;
@@ -77,13 +70,30 @@ header {
       padding-bottom: .55em;
       font-size: 2.6em;
     }
+    h2 {
+      font-size: 1.6rem;
+      letter-spacing: 0.05rem;
+      color: $blue-color;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    h4 {
+      color: $orange-color;
+    }
     h5 {
       text-transform: uppercase;
       letter-spacing: 1.5px;
     }
-    h2 {
-      color: $blue-color;
-    }
+    blockquote {
+      padding: 1rem 3% 1rem 3%;
+      margin: 1.5rem 0 1.5rem 0;
+      background-color: $salmon-color;
+      p {
+        line-height: 1.85rem;
+        font-size: 18px;
+      };
+    };
     p {
       line-height: 1.5em;
       font-size: 0.9rem;
@@ -96,21 +106,10 @@ header {
       line-height: 2em;
       @include green-anchor();
     }
-    h4 {
-      color: $orange-color;
-    }
     hr {
-      color: $grey-light-color;
-    }
-    blockquote {
-      padding: 1.5em 1em 1.5em 1em;
-      margin-left: 0;
-      margin-right: 0;
-      background-color: $salmon-color;
-      p {
-        line-height: 2em;
-        font-size: 18px;
-      }
+      margin: 2.2rem 0 2.2rem 0;
+      border: 0;
+      border-top: 1px solid $grey-light-color;
     };
   };
 
@@ -119,43 +118,42 @@ header {
       font-weight: normal;
     }
     padding-top: 2em;
-    width: 300px;
     padding-right: 11%;
-    .event-list__item {
-      .event-list__item__meta {
-        padding-bottom: 0.2bem;
-      }
-      &:before {
-        position: relative;
-        content: url(../../images/icons/calendar--orange.svg);
-        // left: -1em;
-        float: left;
-        padding-top: 0.25em;
-        padding-right: .5em;
-        // clear: right;
-      }
-      .event-list__item__meta__date {
-        font-family: 'glacial_indifference--bold';
-        font-size: $event-date-time-font-size;
-      }
-      .event-list__item__meta__time {
-        font-size: $event-date-time-font-size;
-      }
-      .event-list__item__title {
-        @include green-anchor();
-      }
-      p {
-        margin-left: 1.4em;
-        margin-top: 0;
-        line-height: 1.5em;
-      }
-    }
     .card {
       background-color: $grey-light-color;
       border-top: solid $orange-color;
-      padding-left: 1em;
-      padding-right: 1em;
-      width: 200px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 12rem;
+      .event-list__item {
+        .event-list__item__meta {
+          padding-bottom: 0.2bem;
+        }
+        &:before {
+          position: relative;
+          content: url(../../images/icons/calendar--orange.svg);
+          // left: -1em;
+          float: left;
+          padding-top: 0.25em;
+          padding-right: .5em;
+          // clear: right;
+        }
+        .event-list__item__meta__date {
+          font-family: 'glacial_indifference--bold';
+          font-size: $event-date-time-font-size;
+        }
+        .event-list__item__meta__time {
+          font-size: $event-date-time-font-size;
+        }
+        .event-list__item__title {
+          @include green-anchor();
+        }
+        p {
+          margin-left: 1.4em;
+          margin-top: 0;
+          line-height: 1.5em;
+        }
+      }
       .contacts-list {
         .contacts-list__item {
           border-bottom: solid thin $grey-color;
@@ -199,7 +197,7 @@ header {
             width: $image-size;
             border-radius: 50%;
           }
-          &:last-child{
+          &:last-child {
             border-bottom: none;
           }
           &:not(:first-child) {
@@ -213,6 +211,7 @@ header {
 
 footer {
   background-color: $blue-color;
+  margin-top: 2.5rem;
   color: white;
   .container {
     padding-top: 2.5em;
@@ -265,72 +264,6 @@ footer {
 // }
 
 //Screens below 600px
-@include medium-screens {
-  .container {
-    padding-left: $horizontal-padding-small-screens;
-    padding-right: $horizontal-padding-small-screens;
-  }
-  .template__layout {
-    .-primary {
-      padding-right: 1em;
-    }
 
-  }
-  .template__layout {
-    flex-direction: column;
-    .-region-secondary {
-      width: 100%;
-      padding-right: 0;
-      padding-bottom: 2em;
-      display:flex;
-      justify-content: space-around;
-      // flex-direction: ;
-      .card {
-        width: 180px;
-      }
-    }
-  }
-  footer {
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      nav {
-        justify-content: center;
-        padding: 0;
-        display: flex;
-        // ul {
-        //   justify-content: center;
-        // }
-      }
-      p {
-        text-align: center;
-        justify-content: center;
-      }
-
-    }
-  }
-}
-
-@include small-screens {
-  .-region-secondary {
-    .card {
-      background-color: blue;
-      padding-left: 0;
-    }
-    float: right;
-    width: 400px;
-    padding: 0;
-  }
-  .contacts-list {
-    display: flex;
-    flex-direction: column;
-      justify-content: center;
-    .contacts-list__item {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-}
-
+@import './mediaQueries.scss';
 

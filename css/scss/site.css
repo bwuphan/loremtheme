@@ -1,4 +1,5 @@
 @import url(../webfonts.css);
+@import url(../webfonts.css);
 a {
   text-decoration: none; }
 
@@ -44,11 +45,6 @@ header {
     padding-right: 5em; }
     .template__layout .-primary h2, .template__layout .-primary h3, .template__layout .-primary h4, .template__layout .-primary h5 {
       font-family: 'glacial_indifference--bold'; }
-    .template__layout .-primary h2 {
-      font-size: 1.6rem;
-      letter-spacing: 0.05rem; }
-    .template__layout .-primary h3 {
-      font-size: 1.3rem; }
     .template__layout .-primary h1 {
       margin-top: .4rem;
       font-family: glacial_indifference--regular;
@@ -57,11 +53,24 @@ header {
       border-bottom: solid thin #eff0f2;
       padding-bottom: .55em;
       font-size: 2.6em; }
+    .template__layout .-primary h2 {
+      font-size: 1.6rem;
+      letter-spacing: 0.05rem;
+      color: #2b3487; }
+    .template__layout .-primary h3 {
+      font-size: 1.3rem; }
+    .template__layout .-primary h4 {
+      color: #f45c42; }
     .template__layout .-primary h5 {
       text-transform: uppercase;
       letter-spacing: 1.5px; }
-    .template__layout .-primary h2 {
-      color: #2b3487; }
+    .template__layout .-primary blockquote {
+      padding: 1rem 3% 1rem 3%;
+      margin: 1.5rem 0 1.5rem 0;
+      background-color: #f2ddd2; }
+      .template__layout .-primary blockquote p {
+        line-height: 1.85rem;
+        font-size: 18px; }
     .template__layout .-primary p {
       line-height: 1.5em;
       font-size: 0.9rem; }
@@ -74,51 +83,42 @@ header {
         font-size: 0.9rem;
         color: #299954;
         text-decoration: none; }
-    .template__layout .-primary h4 {
-      color: #f45c42; }
     .template__layout .-primary hr {
-      color: #eff0f2; }
-    .template__layout .-primary blockquote {
-      padding: 1.5em 1em 1.5em 1em;
-      margin-left: 0;
-      margin-right: 0;
-      background-color: #f2ddd2; }
-      .template__layout .-primary blockquote p {
-        line-height: 2em;
-        font-size: 18px; }
+      margin: 2.2rem 0 2.2rem 0;
+      border: 0;
+      border-top: 1px solid #eff0f2; }
   .template__layout .-region-secondary {
     padding-top: 2em;
-    width: 300px;
     padding-right: 11%; }
     .template__layout .-region-secondary h3 {
       font-weight: normal; }
-    .template__layout .-region-secondary .event-list__item .event-list__item__meta {
-      padding-bottom: 0.2bem; }
-    .template__layout .-region-secondary .event-list__item:before {
-      position: relative;
-      content: url(../../images/icons/calendar--orange.svg);
-      float: left;
-      padding-top: 0.25em;
-      padding-right: .5em; }
-    .template__layout .-region-secondary .event-list__item .event-list__item__meta__date {
-      font-family: 'glacial_indifference--bold';
-      font-size: 0.85rem; }
-    .template__layout .-region-secondary .event-list__item .event-list__item__meta__time {
-      font-size: 0.85rem; }
-    .template__layout .-region-secondary .event-list__item .event-list__item__title a {
-      font-size: 0.9rem;
-      color: #299954;
-      text-decoration: none; }
-    .template__layout .-region-secondary .event-list__item p {
-      margin-left: 1.4em;
-      margin-top: 0;
-      line-height: 1.5em; }
     .template__layout .-region-secondary .card {
       background-color: #eff0f2;
       border-top: solid #f45c42;
-      padding-left: 1em;
-      padding-right: 1em;
-      width: 200px; }
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 12rem; }
+      .template__layout .-region-secondary .card .event-list__item .event-list__item__meta {
+        padding-bottom: 0.2bem; }
+      .template__layout .-region-secondary .card .event-list__item:before {
+        position: relative;
+        content: url(../../images/icons/calendar--orange.svg);
+        float: left;
+        padding-top: 0.25em;
+        padding-right: .5em; }
+      .template__layout .-region-secondary .card .event-list__item .event-list__item__meta__date {
+        font-family: 'glacial_indifference--bold';
+        font-size: 0.85rem; }
+      .template__layout .-region-secondary .card .event-list__item .event-list__item__meta__time {
+        font-size: 0.85rem; }
+      .template__layout .-region-secondary .card .event-list__item .event-list__item__title a {
+        font-size: 0.9rem;
+        color: #299954;
+        text-decoration: none; }
+      .template__layout .-region-secondary .card .event-list__item p {
+        margin-left: 1.4em;
+        margin-top: 0;
+        line-height: 1.5em; }
       .template__layout .-region-secondary .card .contacts-list .contacts-list__item {
         border-bottom: solid thin #bdbfc1;
         padding-bottom: 1.2em; }
@@ -156,6 +156,7 @@ header {
 
 footer {
   background-color: #2b3487;
+  margin-top: 2.5rem;
   color: white; }
   footer .container {
     padding-top: 2.5em;
@@ -215,19 +216,14 @@ footer {
       justify-content: center; } }
 @media only screen and (max-width: 460px) {
   .-region-secondary {
-    float: right;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
     width: 400px;
     padding: 0; }
     .-region-secondary .card {
-      background-color: blue;
-      padding-left: 0; }
-
-  .contacts-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .contacts-list .contacts-list__item {
-      display: flex;
-      flex-direction: column; } }
+      justify-content: center;
+      padding-left: 100px; } }
 
 /*# sourceMappingURL=site.css.map */
