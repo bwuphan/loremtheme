@@ -1,5 +1,6 @@
 @import "partials/variables";
 @import "partials/mixins";
+@import "../webfonts.css";
 
 a {
   text-decoration: none;
@@ -64,8 +65,7 @@ header {
       font-family: 'glacial_indifference--bold';
     }
     h1 {
-      font-family: 'glacial_indifference--bold';
-      font-weight: normal;
+      font-family: glacial_indifference--regular;
       color: $orange-color;
       border-bottom: solid thin $grey-light-color;
       padding-bottom: .8em;
@@ -101,7 +101,7 @@ header {
       font-weight: normal;
     }
     padding-top: 2em;
-    width: 75em;
+    width: 300px;
     padding-right: 7.5em;
     .event-list__item {
       &:before {
@@ -109,7 +109,7 @@ header {
         content: url(../../images/icons/calendar--orange.svg);
         // left: -1em;
         float: left;
-        padding: 0;
+        padding-right: .5em;
         // clear: right;
       }
       .event-list__item__meta__date {
@@ -119,6 +119,7 @@ header {
         @include green-anchor();
       }
       p {
+        margin-left: 1.4em;
         margin-top: 0;
       }
     }
@@ -127,6 +128,7 @@ header {
       border-top: solid $orange-color;
       padding-left: 1em;
       padding-right: 1em;
+      width: 200px;
       .contacts-list {
         .contacts-list__item {
           padding-top: 1em;
@@ -140,8 +142,7 @@ header {
             height: 4em;
           }
           .contacts-list__item__detail--name {
-            font-weight: bold;
-            // transform: translate(15em, );
+            font-family: 'glacial_indifference--bold';
           }
           .contacts-list__item__detail--handle {
             color: $twitter-blue;
@@ -167,9 +168,9 @@ header {
             width: $image-size;
             border-radius: 50%;
           }
+        &:last-child{
+          border-bottom: none;
         }
-        &:first-child {
-          border-bottom: solid $orange-color;
         }
       }
     }
