@@ -3,8 +3,9 @@ a {
   text-decoration: none; }
 
 .container {
-  padding-left: 9.1em;
-  font-family: 'glacial_indifference--regular'; }
+  padding-left: 11%;
+  font-family: 'glacial_indifference--regular';
+  color: #2e3135; }
 
 header {
   border-bottom: solid #2b3487; }
@@ -19,7 +20,7 @@ header {
     display: none; }
 
 .navigation--breadcrumbs {
-  padding-top: 0.75rem; }
+  padding-top: 0.5rem; }
   .navigation--breadcrumbs ul {
     list-style-type: none;
     padding: 0; }
@@ -28,6 +29,7 @@ header {
       color: #bdbfc1;
       display: inline; }
       .navigation--breadcrumbs ul li:after {
+        font-size: 0.4rem;
         content: '\00a0/\00a0'; }
       .navigation--breadcrumbs ul li a {
         text-transform: uppercase;
@@ -42,8 +44,13 @@ header {
     padding-right: 5em; }
     .template__layout .-primary h2, .template__layout .-primary h3, .template__layout .-primary h4, .template__layout .-primary h5 {
       font-family: 'glacial_indifference--bold'; }
+    .template__layout .-primary h2 {
+      font-size: 1.6rem;
+      letter-spacing: 0.05rem; }
+    .template__layout .-primary h3 {
+      font-size: 1.3rem; }
     .template__layout .-primary h1 {
-      margin-top: .53em;
+      margin-top: .4rem;
       font-family: glacial_indifference--regular;
       font-weight: normal;
       color: #f45c42;
@@ -55,20 +62,26 @@ header {
       letter-spacing: 1.5px; }
     .template__layout .-primary h2 {
       color: #2b3487; }
+    .template__layout .-primary p {
+      line-height: 1.5em;
+      font-size: 0.9rem; }
     .template__layout .-primary .intro {
       color: #bdbfc1;
-      font-size: 110%; }
-    .template__layout .-primary p {
-      line-height: 1.5em; }
+      font-size: 1rem; }
     .template__layout .-primary li {
       line-height: 2em; }
       .template__layout .-primary li a {
+        font-size: 0.9rem;
         color: #299954;
         text-decoration: none; }
     .template__layout .-primary h4 {
       color: #f45c42; }
+    .template__layout .-primary hr {
+      color: #eff0f2; }
     .template__layout .-primary blockquote {
       padding: 1.5em 1em 1.5em 1em;
+      margin-left: 0;
+      margin-right: 0;
       background-color: #f2ddd2; }
       .template__layout .-primary blockquote p {
         line-height: 2em;
@@ -76,7 +89,7 @@ header {
   .template__layout .-region-secondary {
     padding-top: 2em;
     width: 300px;
-    padding-right: 7.5em; }
+    padding-right: 11%; }
     .template__layout .-region-secondary h3 {
       font-weight: normal; }
     .template__layout .-region-secondary .event-list__item .event-list__item__meta {
@@ -88,8 +101,12 @@ header {
       padding-top: 0.25em;
       padding-right: .5em; }
     .template__layout .-region-secondary .event-list__item .event-list__item__meta__date {
-      font-family: 'glacial_indifference--bold'; }
+      font-family: 'glacial_indifference--bold';
+      font-size: 0.85rem; }
+    .template__layout .-region-secondary .event-list__item .event-list__item__meta__time {
+      font-size: 0.85rem; }
     .template__layout .-region-secondary .event-list__item .event-list__item__title a {
+      font-size: 0.9rem;
       color: #299954;
       text-decoration: none; }
     .template__layout .-region-secondary .event-list__item p {
@@ -106,7 +123,8 @@ header {
         border-bottom: solid thin #bdbfc1;
         padding-bottom: 1.2em; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail {
-          padding-bottom: 0.3em; }
+          padding-bottom: 0.5em;
+          font-size: 0.85rem; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--thumbnail {
           float: left;
           padding-right: 0.5em;
@@ -128,8 +146,8 @@ header {
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--email a {
           color: black; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item img {
-          height: 85%;
-          width: 85%;
+          height: 95%;
+          width: 95%;
           border-radius: 50%; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item:last-child {
           border-bottom: none; }
@@ -142,7 +160,8 @@ footer {
   footer .container {
     padding-top: 2.5em;
     padding-bottom: 2.5em;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: white; }
     footer .container nav {
       padding-top: 1.5em;
       padding-right: 7.5em; }
