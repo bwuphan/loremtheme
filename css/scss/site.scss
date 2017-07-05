@@ -74,7 +74,6 @@ header {
     }
     h2 {
       font-size: 1.6rem;
-      letter-spacing: 0.05rem;
       color: $blue-color;
     }
     h3 {
@@ -139,8 +138,7 @@ header {
           position: relative;
           content: url(../images/icons/calendar--orange.svg);
           float: left;
-          padding-top: 0.25rem;
-          padding-right: .5rem;
+          padding: 0.25rem 0.5rem 0 0;
         }
         .event-list__item__meta__date {
           font-family: 'glacial_indifference--bold';
