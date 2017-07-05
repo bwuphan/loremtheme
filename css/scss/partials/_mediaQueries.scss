@@ -1,3 +1,4 @@
+//Screens below 760px
 @include medium-screens {
   .container {
     padding-left: $horizontal-padding-small-screens;
@@ -12,15 +13,9 @@
   .template__layout {
     flex-direction: column;
     .-region-secondary {
-      width: 100%;
       padding-right: 0;
-      padding-bottom: 2em;
       display:flex;
       justify-content: space-around;
-      // flex-direction: ;
-      .card {
-        width: 180px;
-      }
     }
   }
   footer {
@@ -34,24 +29,18 @@
         justify-content: center;
         padding: 0;
         display: flex;
-        // ul {
-        //   justify-content: center;
-        // }
       }
       p {
         text-align: center;
-        justify-content: center;
       }
     }
   }
 }
 
+//Screens below 460px
 @include small-screens {
   .-region-secondary {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    padding: 0;
   }
-
 }
