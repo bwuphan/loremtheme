@@ -1,8 +1,3 @@
-@import "partials/variables";
-@import "partials/mixins";
-@import "../webfonts.css";
-
-
 @include medium-screens {
   .container {
     padding-left: $horizontal-padding-small-screens;

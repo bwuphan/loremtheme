@@ -1,5 +1,5 @@
-@import "partials/variables";
-@import "partials/mixins";
+@import "./partials/variables";
+@import "./partials/mixins";
 @import "../webfonts.css";
 
 .container {
@@ -243,5 +243,5 @@ footer {
   }
 }
 
-@import './mediaQueries.scss';
+@import "./partials/mediaQueries";
 
