@@ -1,4 +1,4 @@
-//Screens below 760px
+//Screens below 768px
 @include medium-screens {
   .container {
     padding-left: $horizontal-padding-small-screens;
@@ -34,7 +34,7 @@
   }
 }
 
-//Screens below 460px
+//Screens below 480px
 @include small-screens {
   .-region-secondary {
     display: flex;
