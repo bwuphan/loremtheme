@@ -12,7 +12,6 @@
 			<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/normalize.css">
 			<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/font-awesome.min.css">
 			<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/webfonts.css">
-			<!--- <link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/bootstrap/css/bootstrap.css"> --->
 
 			<!--- write css in this file --->
 			<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/site.css">
