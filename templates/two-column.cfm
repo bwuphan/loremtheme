@@ -15,7 +15,7 @@
 			<!--- <link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/bootstrap/css/bootstrap.css"> --->
 
 			<!--- write css in this file --->
-			<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/scss/site.css">
+			<link rel="stylesheet" href="#$.siteConfig('themeAssetPath')#/css/site.css">
 
 		</head>
 
@@ -206,15 +206,13 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="p">
-						<p>
-						Lorem Ipsum, Inc<br>
-						1234 Fake Street<br>
-						Sacramento, CA 95816<br>
-						916.555.1234
-						</p>
-						<p>&copy; Lorem Ipsum</p>
-					</div>
+					<p>
+					Lorem Ipsum, Inc<br>
+					1234 Fake Street<br>
+					Sacramento, CA 95816<br>
+					916.555.1234
+					</p>
+					<p>&copy; Lorem Ipsum</p>
 				</div>
 			</footer>
 		</body>
