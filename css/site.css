@@ -79,8 +79,7 @@ header {
       line-height: 2em; }
       .template__layout .-primary li a {
         font-size: 0.9rem;
-        color: #299954;
-        text-decoration: none; }
+        color: #299954; }
     .template__layout .-primary hr {
       margin: 2.2rem 0 2.2rem 0;
       border: 0;
@@ -111,8 +110,7 @@ header {
         font-size: 0.85rem; }
       .template__layout .-region-secondary .card .event-list__item .event-list__item__title a {
         font-size: 0.9rem;
-        color: #299954;
-        text-decoration: none; }
+        color: #299954; }
       .template__layout .-region-secondary .card .event-list__item p {
         margin: 0 0 0 1.4rem;
         padding-bottom: 1.4rem;
@@ -207,6 +205,7 @@ footer {
 @media only screen and (max-width: 460px) {
   .-region-secondary {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
 
 /*# sourceMappingURL=site.css.map */
