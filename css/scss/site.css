@@ -155,7 +155,8 @@ header {
 footer {
   background-color: #2b3487;
   margin-top: 2.5rem;
-  color: white; }
+  color: white;
+  font-size: 0.9rem; }
   footer .container {
     padding-bottom: 2rem;
     justify-content: space-between;
