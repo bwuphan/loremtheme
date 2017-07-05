@@ -39,13 +39,12 @@ header {
         font-size: 0.4rem;
         content: '\00a0/\00a0';
       }
-      font-family: 'glacial_indifference--regular';
-      color: $grey-color;
       display: inline;
       a {
+        font-family: 'glacial_indifference--regular';
+        color: $grey-dark-color;
         text-transform: uppercase;
         font-size: 0.5rem;
-        color: $grey-color;
       }
       &:last-child:after{
         content: none;
@@ -68,10 +67,10 @@ header {
       font-family: glacial_indifference--regular;
       font-weight: normal;
       color: $orange-color;
-      border-bottom: solid thin $grey-light-color;
+      border-bottom: solid thin $grey-medium-color;
       margin-top: .4rem;
-      padding-bottom: .55em;
-      font-size: 2.6em;
+      padding-bottom: 1rem;
+      font-size: 2.6rem;
     }
     h2 {
       font-size: 1.6rem;
@@ -86,7 +85,7 @@ header {
     }
     h5 {
       text-transform: uppercase;
-      letter-spacing: 1.5px;
+      letter-spacing: 0.1rem;
     }
     blockquote {
       padding: 1rem 3% 1rem 3%;
@@ -94,7 +93,7 @@ header {
       background-color: $salmon-color;
       p {
         line-height: 1.85rem;
-        font-size: 18px;
+        font-size: 1.2rem;
       };
     };
     p {
@@ -102,17 +101,17 @@ header {
       font-size: 0.9rem;
     }
     .intro {
-      color: $grey-color;
+      color: $grey-dark-color;
       font-size: 1rem;
     }
     li {
-      line-height: 2em;
+      line-height: 2rem;
       @include green-anchor();
     }
     hr {
       margin: 2.2rem 0 2.2rem 0;
       border: 0;
-      border-top: 1px solid $grey-light-color;
+      border-top: 1px solid $grey-medium-color;
     };
   };
 
@@ -163,7 +162,7 @@ header {
       //Contact List
       .contacts-list {
         .contacts-list__item {
-          border-bottom: solid thin $grey-color;
+          border-bottom: solid thin $grey-medium-color;
           padding-bottom: 0.8rem;
           .contacts-list__item__detail {
             padding-bottom: 0.5em;
@@ -206,7 +205,7 @@ header {
             border-bottom: none;
           }
           &:not(:first-child) {
-            padding-top: 1em;
+            padding-top: 1rem;
           }
         }
       }
