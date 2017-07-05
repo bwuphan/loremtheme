@@ -142,7 +142,7 @@ header {
           font-family: 'FontAwesome';
           content: '\f0e0'; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--email a {
-          color: black; }
+          color: #2e3135; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item:last-child {
           border-bottom: none; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item:not(:first-child) {
@@ -179,11 +179,10 @@ footer {
     padding-left: 1em;
     padding-right: 1em; }
 
-  .template__layout .-primary {
-    padding-right: 1em; }
-
   .template__layout {
     flex-direction: column; }
+    .template__layout .-primary {
+      padding-right: 1em; }
     .template__layout .-region-secondary {
       padding-right: 0;
       display: flex;

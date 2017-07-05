@@ -5,13 +5,10 @@
     padding-right: $horizontal-padding-small-screens;
   }
   .template__layout {
+    flex-direction: column;
     .-primary {
       padding-right: 1em;
     }
-
-  }
-  .template__layout {
-    flex-direction: column;
     .-region-secondary {
       padding-right: 0;
       display: flex;
@@ -43,8 +40,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .card {
-
-    }
   }
 }

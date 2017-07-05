@@ -5,7 +5,7 @@
 .container {
   padding-left: $container-padding;
   font-family: 'glacial_indifference--regular';
-  color: $black;
+  color: $black-color;
 }
 
 //Take out underlining for anchor tags
@@ -93,7 +93,7 @@ header {
       background-color: $salmon-color;
       p {
         line-height: 1.85rem;
-        font-size: 1.2rem;
+        font-size: $main-body-font-size;
       };
     };
     p {
@@ -183,13 +183,13 @@ header {
             font-family: 'glacial_indifference--bold';
           }
           .contacts-list__item__detail--handle {
-            color: $twitter-blue;
+            color: $twitter-blue-color;
             &:before {
               font-family: 'FontAwesome';
               content: '\f099';
             }
             a {
-              color: $twitter-blue;
+              color: $twitter-blue-color;
             }
           }
           .contacts-list__item__detail--email {
@@ -198,7 +198,7 @@ header {
               content: '\f0e0';
             }
             a {
-              color: black;
+              color: $black-color;
             }
           }
           &:last-child {
