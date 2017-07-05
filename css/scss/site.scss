@@ -123,13 +123,15 @@ header {
       font-weight: normal;
     }
     padding-top: 2rem;
-    padding-right: 11%;
+    padding-right: $container-padding;
     .card {
       background-color: $grey-light-color;
       border-top: solid $orange-color;
       padding: 0 1rem 0 1rem;
       margin-bottom: 1rem;
       width: 12.5rem;
+
+      //Upcoming Events
       .event-list__item {
         .event-list__item__meta {
           padding-bottom: 0.2rem;
@@ -157,6 +159,8 @@ header {
           line-height: 1.3rem;
         }
       }
+
+      //Contact List
       .contacts-list {
         .contacts-list__item {
           border-bottom: solid thin $grey-color;
@@ -222,7 +226,7 @@ footer {
     color: white;
     nav {
       padding-top: 1.5rem;
-      padding-right: 11%;
+      padding-right: $container-padding;
       ul {
         float: right;
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;

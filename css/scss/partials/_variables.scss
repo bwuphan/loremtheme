@@ -1,3 +1,4 @@
+//Colors
 $blue-color: #2b3487;
 $grey-color: #bdbfc1;
 $grey-light-color: #eff0f2;
@@ -8,14 +9,17 @@ $green-color: #299954;
 $twitter-blue: #00aced;
 $black: #2e3135;
 
-//margins
-$container-padding: 11%;
+//Font sizes
+$event-date-time-font-size: 0.85rem;
+$contact-font-size: 0.85rem;
 
+//Margins/padding/borders
+$container-padding: 11%;
+$horizontal-padding-small-screens: 1em;
+
+//Thumbnail size
 $image-size: 100%;
 $image-height-width: 4em;
 
 
-$horizontal-padding-small-screens: 1em;
 
-$event-date-time-font-size: 0.85rem;
-$contact-font-size: 0.85rem;
