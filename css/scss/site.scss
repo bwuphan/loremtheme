@@ -2,25 +2,25 @@
 @import "partials/mixins";
 @import "../webfonts.css";
 
-a {
-  text-decoration: none;
-}
-
 .container {
-  padding-left: $container-padding-left;
+  padding-left: $container-padding;
   font-family: 'glacial_indifference--regular';
   color: $black;
 }
 
-//header
+//Take out underlining for anchor tags
+a {
+  text-decoration: none;
+}
+
+//Header Styling
 header {
   h1 {
-    margin-top: .8rem;
-    margin-bottom: .8rem;
-    height: 3.5rem;
-    width: 15rem;
     background-image: url(./logo@2x.png);
     background-size: 100%;
+    margin: 0.8rem 0 0.8rem 0;
+    height: 3.5rem;
+    width: 15rem;
   }
   a {
     display: none;
@@ -28,6 +28,7 @@ header {
   border-bottom: solid $blue-color;
 }
 
+//Navbar Styling
 .navigation--breadcrumbs {
   padding-top: 0.5rem;
   ul {
@@ -53,20 +54,22 @@ header {
   }
 }
 
+//Main body of site
 .template__layout {
   display: flex;
 
+  //Left/primary section
   .-primary {
-    padding-right: 5em;
+    padding-right: 5%;
     h2,h3,h4,h5 {
       font-family: 'glacial_indifference--bold';
     }
     h1 {
-      margin-top: .4rem;
       font-family: glacial_indifference--regular;
       font-weight: normal;
       color: $orange-color;
       border-bottom: solid thin $grey-light-color;
+      margin-top: .4rem;
       padding-bottom: .55em;
       font-size: 2.6em;
     }
@@ -113,30 +116,30 @@ header {
     };
   };
 
+
+  //Sidebar content
   .-region-secondary {
     h3 {
       font-weight: normal;
     }
-    padding-top: 2em;
+    padding-top: 2rem;
     padding-right: 11%;
     .card {
       background-color: $grey-light-color;
       border-top: solid $orange-color;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      width: 12rem;
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 1rem;
+      width: 12.5rem;
       .event-list__item {
         .event-list__item__meta {
-          padding-bottom: 0.2bem;
+          padding-bottom: 0.2rem;
         }
         &:before {
           position: relative;
           content: url(../../images/icons/calendar--orange.svg);
-          // left: -1em;
           float: left;
-          padding-top: 0.25em;
-          padding-right: .5em;
-          // clear: right;
+          padding-top: 0.25rem;
+          padding-right: .5rem;
         }
         .event-list__item__meta__date {
           font-family: 'glacial_indifference--bold';
@@ -149,28 +152,31 @@ header {
           @include green-anchor();
         }
         p {
-          margin-left: 1.4em;
-          margin-top: 0;
-          line-height: 1.5em;
+          margin: 0 0 0 1.4rem;
+          padding-bottom: 1.4rem;
+          line-height: 1.3rem;
         }
       }
       .contacts-list {
         .contacts-list__item {
           border-bottom: solid thin $grey-color;
-          padding-bottom: 1.2em;
+          padding-bottom: 0.8rem;
           .contacts-list__item__detail {
             padding-bottom: 0.5em;
             font-size: $contact-font-size;
           }
           .contacts-list__item__detail--thumbnail {
             float:left;
-            padding-right: 0.5em;
-            padding-bottom: 0.75em;
-            width: 4em;
-            height: 4em;
+            padding-right: 0.7rem;
+            width: $image-height-width;
+            height: $image-height-width;
+            img {
+              height: $image-size;
+              width: $image-size;
+              border-radius: 50%;
+            }
           }
           .contacts-list__item__detail--name {
-            // font-size: 1rem;
             font-family: 'glacial_indifference--bold';
           }
           .contacts-list__item__detail--handle {
@@ -192,11 +198,6 @@ header {
               color: black;
             }
           }
-          img {
-            height: $image-size;
-            width: $image-size;
-            border-radius: 50%;
-          }
           &:last-child {
             border-bottom: none;
           }
@@ -214,26 +215,21 @@ footer {
   margin-top: 2.5rem;
   color: white;
   .container {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-bottom: 2rem;
     justify-content: space-between;
     color: white;
     nav {
-      padding-top: 1.5em;
-      padding-right: 7.5em;
+      padding-top: 1.5rem;
+      padding-right: 11%;
       ul {
-        float:right;
-        padding: 0.5em 0.5em 0.5em 0.5em;
+        float: right;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         background-color: $blue-light-color;
         list-style-type: none;
-        display: inline;
         li {
           border-right: solid thin white;
-          padding-left: 0.5em;
-          padding-right: 0.5em;
+          padding: 0.1rem 0.5rem 0.1rem 0.5rem;
           display: inline;
-          padding-top: 0.1em;
-          padding-bottom: 0.1em;
           a {
             color: white;
           }
@@ -245,25 +241,6 @@ footer {
     }
   }
 }
-
-// Screens below 800px and above 600px
-// @include medium-screens {
-//   .container {
-//     padding-left: 2em;
-//   }
-//   .template-layout {
-//     .-region-secondary {
-//       padding-right: 0;
-//     }
-//   }
-
-//   blockquote {
-//     margin-left: 0.5em;
-//     margin-right: 0.5em;
-//   }
-// }
-
-//Screens below 600px
 
 @import './mediaQueries.scss';
 

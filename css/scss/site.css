@@ -1,22 +1,21 @@
 @import url(../webfonts.css);
 @import url(../webfonts.css);
-a {
-  text-decoration: none; }
-
 .container {
   padding-left: 11%;
   font-family: 'glacial_indifference--regular';
   color: #2e3135; }
 
+a {
+  text-decoration: none; }
+
 header {
   border-bottom: solid #2b3487; }
   header h1 {
-    margin-top: .8rem;
-    margin-bottom: .8rem;
-    height: 3.5rem;
-    width: 15rem;
     background-image: url(./logo@2x.png);
-    background-size: 100%; }
+    background-size: 100%;
+    margin: 0.8rem 0 0.8rem 0;
+    height: 3.5rem;
+    width: 15rem; }
   header a {
     display: none; }
 
@@ -42,15 +41,15 @@ header {
 .template__layout {
   display: flex; }
   .template__layout .-primary {
-    padding-right: 5em; }
+    padding-right: 5%; }
     .template__layout .-primary h2, .template__layout .-primary h3, .template__layout .-primary h4, .template__layout .-primary h5 {
       font-family: 'glacial_indifference--bold'; }
     .template__layout .-primary h1 {
-      margin-top: .4rem;
       font-family: glacial_indifference--regular;
       font-weight: normal;
       color: #f45c42;
       border-bottom: solid thin #eff0f2;
+      margin-top: .4rem;
       padding-bottom: .55em;
       font-size: 2.6em; }
     .template__layout .-primary h2 {
@@ -88,24 +87,24 @@ header {
       border: 0;
       border-top: 1px solid #eff0f2; }
   .template__layout .-region-secondary {
-    padding-top: 2em;
+    padding-top: 2rem;
     padding-right: 11%; }
     .template__layout .-region-secondary h3 {
       font-weight: normal; }
     .template__layout .-region-secondary .card {
       background-color: #eff0f2;
       border-top: solid #f45c42;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      width: 12rem; }
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 1rem;
+      width: 12.5rem; }
       .template__layout .-region-secondary .card .event-list__item .event-list__item__meta {
-        padding-bottom: 0.2bem; }
+        padding-bottom: 0.2rem; }
       .template__layout .-region-secondary .card .event-list__item:before {
         position: relative;
         content: url(../../images/icons/calendar--orange.svg);
         float: left;
-        padding-top: 0.25em;
-        padding-right: .5em; }
+        padding-top: 0.25rem;
+        padding-right: .5rem; }
       .template__layout .-region-secondary .card .event-list__item .event-list__item__meta__date {
         font-family: 'glacial_indifference--bold';
         font-size: 0.85rem; }
@@ -116,21 +115,24 @@ header {
         color: #299954;
         text-decoration: none; }
       .template__layout .-region-secondary .card .event-list__item p {
-        margin-left: 1.4em;
-        margin-top: 0;
-        line-height: 1.5em; }
+        margin: 0 0 0 1.4rem;
+        padding-bottom: 1.4rem;
+        line-height: 1.3rem; }
       .template__layout .-region-secondary .card .contacts-list .contacts-list__item {
         border-bottom: solid thin #bdbfc1;
-        padding-bottom: 1.2em; }
+        padding-bottom: 0.8rem; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail {
           padding-bottom: 0.5em;
           font-size: 0.85rem; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--thumbnail {
           float: left;
-          padding-right: 0.5em;
-          padding-bottom: 0.75em;
+          padding-right: 0.7rem;
           width: 4em;
           height: 4em; }
+          .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--thumbnail img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--name {
           font-family: 'glacial_indifference--bold'; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--handle {
@@ -145,10 +147,6 @@ header {
           content: '\f0e0'; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item .contacts-list__item__detail--email a {
           color: black; }
-        .template__layout .-region-secondary .card .contacts-list .contacts-list__item img {
-          height: 95%;
-          width: 95%;
-          border-radius: 50%; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item:last-child {
           border-bottom: none; }
         .template__layout .-region-secondary .card .contacts-list .contacts-list__item:not(:first-child) {
@@ -159,26 +157,21 @@ footer {
   margin-top: 2.5rem;
   color: white; }
   footer .container {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-bottom: 2rem;
     justify-content: space-between;
     color: white; }
     footer .container nav {
-      padding-top: 1.5em;
-      padding-right: 7.5em; }
+      padding-top: 1.5rem;
+      padding-right: 11%; }
       footer .container nav ul {
         float: right;
-        padding: 0.5em 0.5em 0.5em 0.5em;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         background-color: #4c5599;
-        list-style-type: none;
-        display: inline; }
+        list-style-type: none; }
         footer .container nav ul li {
           border-right: solid thin white;
-          padding-left: 0.5em;
-          padding-right: 0.5em;
-          display: inline;
-          padding-top: 0.1em;
-          padding-bottom: 0.1em; }
+          padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+          display: inline; }
           footer .container nav ul li a {
             color: white; }
           footer .container nav ul li:last-child {
@@ -223,6 +216,7 @@ footer {
     width: 400px;
     padding: 0; }
     .-region-secondary .card {
+      background-color: blue;
       justify-content: center;
       padding-left: 100px; } }
 
